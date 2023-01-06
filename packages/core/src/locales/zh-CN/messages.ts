@@ -1,0 +1,1 @@
+/*eslint-disable*/export const messages={"Error:":"Error:","Reload Application":"Reload Application","Report an Issue":"Report an Issue","Something went wrong":"Something went wrong"};
