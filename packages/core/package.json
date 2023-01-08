@@ -10,10 +10,12 @@
   "module": "dist/esm.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
-    "build": "pnpm run build:js",
+    "dev": "pnpm build:watch:types && pnpm build:watch",
+    "build": "pnpm build:types && pnpm locale && pnpm build:js",
     "build:js": "rollup -c",
     "build:watch": "rollup -c -w",
     "build:types": "tsc --emitDeclarationOnly",
+    "build:watch:types": "tsc --watch --emitDeclarationOnly",
     "locale": "pnpm locale:extract && pnpm locale:compile",
     "locale:clean": "lingui extract --clean",
     "locale:extract": "lingui extract",

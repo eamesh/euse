@@ -1,6 +1,6 @@
 {
   "name": "@euse/turborepo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:types": "pnpm --filter @euse/* build:types",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
