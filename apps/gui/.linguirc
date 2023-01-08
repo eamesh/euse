@@ -1,0 +1,21 @@
+{
+  "catalogs": [
+    {
+      "path": "<rootDir>/src/locales/{locale}/messages",
+      "include": [
+        "<rootDir>/src"
+      ],
+      "exclude": [
+        "**/node_modules/**"
+      ]
+    }
+  ],
+  "locales": [
+    "zh-CN"
+  ],
+  "format": "po",
+  "sourceLocale": "zh-CN",
+  "fallbackLocales": {
+    "default": "zh-CN"
+  }
+}

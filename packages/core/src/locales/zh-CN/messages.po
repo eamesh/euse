@@ -13,9 +13,26 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:51
+msgid "Copied"
+msgstr "Copied"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:51
+msgid "Copy to Clipboard"
+msgstr "Copy to Clipboard"
+
 #: src/components/ErrorBoundary/ErrorBoundary.tsx:86
 msgid "Error:"
 msgstr "Error:"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:107
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
+msgid "Log Out"
+msgstr "Log Out"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:125
+#~ msgid "Logout"
+#~ msgstr "Logout"
 
 #: src/components/ErrorBoundary/ErrorBoundary.tsx:99
 msgid "Reload Application"

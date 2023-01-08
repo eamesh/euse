@@ -1,1 +1,1 @@
-/*eslint-disable*/export const messages={};
+/*eslint-disable*/export const messages={"Loading configuration":"正在加载配置"};

@@ -7,7 +7,13 @@ declare module '@mui/material' {
   }
 }
 
-const defaultTheme: ThemeOptions = {
+export interface EmeshThemeOptions extends ThemeOptions {
+  drawer: {
+    width: string;
+  };
+}
+
+const defaultTheme: EmeshThemeOptions = {
   palette: {
     background: {
       default: '#fafafa',
@@ -29,6 +35,9 @@ const defaultTheme: ThemeOptions = {
     toolbar: {
       minHeight: '90px',
     },
+  },
+  drawer: {
+    width: '72px',
   },
   components: {
     MuiSvgIcon: {

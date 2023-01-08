@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "locale": "pnpm locale:extract && pnpm locale:compile",
+    "locale:clean": "lingui extract --clean",
+    "locale:extract": "lingui extract",
+    "locale:compile": "lingui compile --typescript"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

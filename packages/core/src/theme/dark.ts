@@ -16,4 +16,4 @@ export default createTheme({
     },
     mode: 'dark',
   },
-});
+} as any);

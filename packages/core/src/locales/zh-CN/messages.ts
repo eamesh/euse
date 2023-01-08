@@ -1,1 +1,1 @@
-/*eslint-disable*/export const messages={"Error:":"Error:","Reload Application":"Reload Application","Report an Issue":"Report an Issue","Something went wrong":"Something went wrong"};
+/*eslint-disable*/export const messages={"Copied":"Copied","Copy to Clipboard":"Copy to Clipboard","Error:":"Error:","Log Out":"Log Out","Logout":"Logout","Reload Application":"Reload Application","Report an Issue":"Report an Issue","Something went wrong":"Something went wrong"};

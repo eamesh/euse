@@ -10,4 +10,4 @@ export default createTheme({
       ...theme.palette?.background,
     },
   },
-});
+} as any);
