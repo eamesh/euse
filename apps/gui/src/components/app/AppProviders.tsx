@@ -44,24 +44,24 @@ export default function AppProviders(props: AppProviderProps) {
   return (
     <LocaleProvider i18n={i18n} defaultLocale={defaultLocale} locales={locales}>
       <ThemeProvider theme={theme} fonts global>
-        <ErrorBoundary>
-          <LRUsProvider>
-            <ModalDialogsProvider>
-              {isReady ? (
-                <Suspense fallback={<LayoutHero />}>
-                  <AppState>{outlet ? <Outlet /> : children}</AppState>
-                </Suspense>
-              ) : (
-                <LayoutLoading>
-                  <Typography variant="body1">
-                    <Trans>Loading configuration</Trans>
-                  </Typography>
-                </LayoutLoading>
-              )}
-              <ModalDialogs />
-            </ModalDialogsProvider>
-          </LRUsProvider>
-        </ErrorBoundary>
+        {/* <ErrorBoundary> */}
+        <LRUsProvider>
+          <ModalDialogsProvider>
+            {isReady ? (
+              <Suspense fallback={<LayoutHero />}>
+                <AppState>{outlet ? <Outlet /> : children}</AppState>
+              </Suspense>
+            ) : (
+              <LayoutLoading>
+                <Typography variant="body1">
+                  <Trans>Loading configuration</Trans>
+                </Typography>
+              </LayoutLoading>
+            )}
+            <ModalDialogs />
+          </ModalDialogsProvider>
+        </LRUsProvider>
+        {/* </ErrorBoundary> */}
       </ThemeProvider>
     </LocaleProvider>
   );

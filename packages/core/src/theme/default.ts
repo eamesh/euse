@@ -11,12 +11,37 @@ export interface EmeshThemeOptions extends ThemeOptions {
   drawer: {
     width: string;
   };
+  palette: ThemeOptions['palette'] & {
+    highlight: {
+      main: string;
+    };
+    border: {
+      main: string;
+      dark: string;
+    };
+    sidebarBackground: {
+      main: string;
+      dark: '#505C4E';
+    };
+    sidebarIconSelected: {
+      main: string;
+      dark: string;
+    };
+    sidebarIcon: {
+      main: string;
+      dark: string;
+    };
+    sidebarIconHover: {
+      main: string;
+      dark: string;
+    };
+  };
 }
 
 const defaultTheme: EmeshThemeOptions = {
   palette: {
     background: {
-      default: '#fafafa',
+      default: '#F0F3F9',
     },
     primary: {
       main: '#3AAC59', // '#00C853',
@@ -29,6 +54,29 @@ const defaultTheme: EmeshThemeOptions = {
     error: {
       main: '#dc3545',
       contrastText: '#ffffff',
+    },
+    highlight: {
+      main: '#00C853',
+    },
+    border: {
+      main: '#E0E0E0',
+      dark: '#484747',
+    },
+    sidebarBackground: {
+      main: '#E8F5E9',
+      dark: '#505C4E',
+    },
+    sidebarIconSelected: {
+      main: '#1B5E20',
+      dark: '#3AAC59',
+    },
+    sidebarIcon: {
+      main: '#9E9E9E',
+      dark: '#9E9E9E',
+    },
+    sidebarIconHover: {
+      main: '#424242',
+      dark: 'white',
     },
   },
   mixins: {

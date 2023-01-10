@@ -1,7 +1,7 @@
 import { Link as BaseLink, LinkProps as BaseLinkProps } from '@mui/material';
 import { SyntheticEvent } from 'react';
 import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
-import styled from 'styled-components';
+import { styled } from '@mui/material';
 
 import useOpenExternal from '../../hooks/useOpenExternal';
 
@@ -15,7 +15,7 @@ type Props = BaseLinkProps &
     | RouterLinkProps
   );
 
-const StyledBaseLink = styled(({ fullWidth, noWrap, ...rest }) => <BaseLink {...rest} />)`
+const StyledBaseLink = styled(({ fullWidth, noWrap, ...rest }: any) => <BaseLink {...rest} />)`
   width: ${({ fullWidth }) => (fullWidth ? '100%' : 'inherit')};
   ${() => `white-space: nowrap;`}
   cursor: pointer;

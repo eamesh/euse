@@ -7,7 +7,7 @@ export default defineConfig({
     react({
       babel: {
         // babel-macro is needed for lingui
-        plugins: ['macros'],
+        plugins: ['macros', '@emotion'],
       },
     }),
   ],

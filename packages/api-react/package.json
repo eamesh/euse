@@ -11,7 +11,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "dev": "pnpm build:watch:types && pnpm build:watch",
-    "build": "pnpm build:types && pnpm locale && pnpm build:js",
+    "build": "rimraf dist && pnpm build:types && pnpm locale && pnpm build:js",
     "build:js": "rollup -c",
     "build:watch": "rollup -c -w",
     "build:types": "tsc --emitDeclarationOnly",
@@ -45,6 +45,7 @@
     "babel-plugin-styled-components": "^2.0.7",
     "babel-plugin-transform-imports": "^2.0.0",
     "react-is": "^18.2.0",
+    "rimraf": "^3.0.2",
     "rollup": "^3.9.1",
     "rollup-plugin-node-externals": "^5.0.3",
     "styled-components": "^5.3.6",

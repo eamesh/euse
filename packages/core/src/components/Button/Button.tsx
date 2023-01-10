@@ -3,11 +3,11 @@ import {
   ButtonProps as BaseButtonProps,
   ThemeOptions,
   SimplePaletteColorOptions,
+  styled,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
 
-const StyledBaseButton = styled(({ nowrap: boolean, selected, ...rest }) => <BaseButton {...rest} />)`
+const StyledBaseButton = styled(({ nowrap, selected, ...rest }: any) => <BaseButton {...rest} />)`
   white-space: ${({ nowrap }) => (nowrap ? 'nowrap' : 'normal')};
   ${({ selected, theme }) => {
     if (!selected) {

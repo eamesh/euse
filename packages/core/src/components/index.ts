@@ -17,3 +17,4 @@ export { default as Persist } from './Persist';
 export { default as ThemeProvider } from './ThemeProvider';
 export { default as ToolbarSpacing } from './ToolbarSpacing';
 export { default as Tooltip } from './Tooltip';
+export { default as SideBarItem } from './SideBarItem';

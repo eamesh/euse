@@ -1,6 +1,6 @@
 import { CircularProgress, CircularProgressProps, Typography } from '@mui/material';
 import { type ReactNode } from 'react';
-import styled from 'styled-components';
+import { styled } from '@mui/material';
 
 import Flex from '../Flex';
 

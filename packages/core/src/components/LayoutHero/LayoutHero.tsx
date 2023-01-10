@@ -1,8 +1,7 @@
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { AppBar, Toolbar, Box } from '@mui/material';
+import { AppBar, Toolbar, Box, styled } from '@mui/material';
 import { type ReactNode } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import styled from 'styled-components';
 
 import Flex from '../Flex';
 

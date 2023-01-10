@@ -11,6 +11,7 @@
   ],
   "plugins": [
     "macros",
+    "@emotion",
     "@babel/plugin-transform-runtime",
     "babel-plugin-styled-components",
     [

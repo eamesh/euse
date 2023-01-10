@@ -45,6 +45,7 @@ const StyledBody = styled(Flex)`
 const StyledToolbar = styled(Toolbar)`
   padding-left: ${({ theme }) => theme.spacing(3)};
   padding-right: ${({ theme }) => theme.spacing(3)};
+  min-height: 60px;
 `;
 
 const StyledInlineTypography = styled(Typography)`
