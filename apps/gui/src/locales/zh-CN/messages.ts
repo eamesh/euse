@@ -1,1 +1,1 @@
-/*eslint-disable*/ export const messages = JSON.parse('{}');
+/*eslint-disable*/export const messages=JSON.parse("{\"Loading configuration\":\"正在加载配置\",\"Settings\":\"设置\",\"Square\":\"广场\"}");

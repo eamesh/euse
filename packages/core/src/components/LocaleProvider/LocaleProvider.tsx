@@ -11,7 +11,7 @@ export const LocaleContext = createContext<{
     locale: string;
     label: string;
   }[];
-  locale: string | undefined;
+  locale: string;
   setLocale: (locale: string) => void;
 }>({
   defaultLocale: 'zh-CN',

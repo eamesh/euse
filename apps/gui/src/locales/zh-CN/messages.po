@@ -12,3 +12,15 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
+
+#: src/components/app/AppProviders.tsx:55
+msgid "Loading configuration"
+msgstr "正在加载配置"
+
+#: src/components/dashboard/DashboardSideBar.tsx:58
+msgid "Settings"
+msgstr "设置"
+
+#: src/components/dashboard/DashboardSideBar.tsx:50
+msgid "Square"
+msgstr "广场"

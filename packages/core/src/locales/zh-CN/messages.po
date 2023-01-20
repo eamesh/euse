@@ -12,3 +12,35 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:51
+msgid "Copied"
+msgstr "已复制"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:51
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:86
+msgid "Error:"
+msgstr "错误:"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:101
+#~ msgid "Log Out"
+#~ msgstr "登出"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:125
+#~ msgid "Logout"
+#~ msgstr "登出"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:99
+msgid "Reload Application"
+msgstr "重新加载程序"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:94
+msgid "Report an Issue"
+msgstr "反馈问题"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:81
+msgid "Something went wrong"
+msgstr "出错了"

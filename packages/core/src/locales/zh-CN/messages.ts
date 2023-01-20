@@ -1,1 +1,1 @@
-/*eslint-disable*/export const messages=JSON.parse("{}");
+/*eslint-disable*/export const messages=JSON.parse("{\"Copied\":\"已复制\",\"Copy to Clipboard\":\"复制到剪贴板\",\"Error:\":\"错误:\",\"Log Out\":\"登出\",\"Logout\":\"登出\",\"Reload Application\":\"重新加载程序\",\"Report an Issue\":\"反馈问题\",\"Something went wrong\":\"出错了\"}");

@@ -14,13 +14,13 @@ export type Serializable = number | string | null | boolean | { [k: string]: Ser
 export default function usePrefs<T extends Serializable>(
   key: string,
   initialValue?: T
-): [T | undefined, (value: T | ((value: T | undefined) => T)) => void] {
+): [T, (value: T | ((value: T) => T)) => void] {
   const prefsInRAM = (window as any).preferences;
   const currentPrefValue = prefsInRAM === undefined || prefsInRAM[key] === undefined ? initialValue : prefsInRAM[key];
-  const [prefStateValue, setPrefStateValue] = useState<T | undefined>(currentPrefValue);
+  const [prefStateValue, setPrefStateValue] = useState<T>(currentPrefValue);
 
   const setPrefValue = useCallback(
-    (valueOrFunc: T | ((value: T | undefined) => T)) => {
+    (valueOrFunc: T | ((value: T) => T)) => {
       const newPrefValue = valueOrFunc instanceof Function ? valueOrFunc(prefStateValue) : valueOrFunc;
       if (maybeEqual(newPrefValue, currentPrefValue)) {
         return;

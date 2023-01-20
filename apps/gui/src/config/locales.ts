@@ -4,7 +4,7 @@ import { zh } from 'make-plural/plurals';
 
 import * as guiLocales from '../locales';
 
-export const defaultLocale = 'en-US';
+export const defaultLocale = 'zh-CN';
 
 // https://www.codetwo.com/admins-blog/list-of-office-365-language-id/
 // https://www.venea.net/web/culture_code
@@ -22,6 +22,7 @@ locales.forEach(({ locale }) => {
 
   const messages = {
     ...(coreLocales as any)[importName].messages,
+    ...(guiLocales as any)[importName].messages,
   };
 
   i18n.load(locale, messages);
