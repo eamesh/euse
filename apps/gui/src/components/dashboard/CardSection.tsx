@@ -19,6 +19,10 @@ const StyledRating = styled(Rating)({
   },
 });
 
+const StyleCard = styled(Card)`
+  cursor: pointer;
+`;
+
 function CardItem(props: IApp) {
   const navigate = useNavigate();
 
@@ -28,7 +32,7 @@ function CardItem(props: IApp) {
 
   return (
     <Grid xs={12} sm={6} md={6} lg={4} xl={3}>
-      <Card variant="outlined" onClick={onClick}>
+      <StyleCard variant="outlined" onClick={onClick}>
         <Stack direction="row" gap="16px" padding="14px">
           <CardMedia
             component="img"
@@ -58,7 +62,7 @@ function CardItem(props: IApp) {
             </Stack>
           </StyleCardContent>
         </Stack>
-      </Card>
+      </StyleCard>
     </Grid>
   );
 }
