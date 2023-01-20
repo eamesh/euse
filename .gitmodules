@@ -1,0 +1,4 @@
+[submodule "apps/ai"]
+	path = apps/ai
+	url = git@github.com:eamesh/ai.git
+	branch = dev
