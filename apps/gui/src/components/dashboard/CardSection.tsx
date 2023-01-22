@@ -162,8 +162,8 @@ const hostApps: IApp[] = [
 export default function CardSection() {
   return (
     <Grid container spacing={2}>
-      {hostApps.map((item) => {
-        return <CardItem {...item} />;
+      {hostApps.map((item, idx) => {
+        return <CardItem key={idx} {...item} />;
       })}
     </Grid>
   );
